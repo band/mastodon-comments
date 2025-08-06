@@ -1,0 +1,183 @@
+.container {
+  max-width: 740px;
+  margin: 0 auto;
+}
+
+/* small reset*/
+.container * {
+  padding: 0;
+  margin: 0;
+}
+
+.statsBar {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.statsBar:hover {
+  text-decoration: underline;
+}
+
+.statItem {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  white-space: nowrap;
+}
+
+.container a {
+  text-decoration: underline;
+}
+
+.container a.link {
+  text-decoration: underline;
+}
+
+.container a.link:hover {
+  text-decoration: underline;
+}
+
+.icon {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.errorText, .loadingText {
+  text-align: center;
+}
+
+.commentsTitle {
+  margin-top: 1.5rem;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.replyText {
+  margin-top: 0.5rem;
+  font-size: 0.875rem;
+}
+
+.divider {
+  margin-top: 0.5rem;
+}
+
+.commentsList {
+  margin-top: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.container .showMoreButton {
+  margin: .5rem auto;
+    font-size: 0.875rem;
+    width: fit-content;
+    padding: .25rem .5rem;
+    display: flex;
+    align-items: center;
+    gap: .2rem;
+    background: none;
+    border: 1px solid;
+    border-color: inherit;
+    border-radius: .2rem;
+}
+
+.container .showMoreButton:hover {
+  text-decoration: underline;
+}
+
+.commentContainer {
+  margin: 1rem 0;
+  font-size: 0.875rem;
+}
+
+.commentContent {
+  display: flex;
+  max-width: 36rem;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.authorLink {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.authorLink:hover {
+  text-decoration: underline;
+}
+
+.avatar {
+  height: 1rem;
+  width: 1rem;
+  flex-shrink: 0;
+  border-radius: 9999px;
+  background-color: #d1d5db;
+}
+
+.authorName {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+
+.container a {
+  color: inherit;
+}
+
+.container a:hover {
+  text-decoration: none;
+}
+
+.commentContent .handle {
+  color: #6b7280;
+}
+.repliesContainer {
+  border-left: 2px solid #525252;
+  padding-left: 0.5rem;
+}
+
+.actionsContainer {
+  margin-top: 0.5rem;
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.replyAction {
+  flex-basis: 70%;
+}
+
+.replyAction svg {
+  vertical-align: bottom;
+}
+
+.actionsRow {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.screenReader {
+	border: 0 !important;
+	clip: rect(1px, 1px, 1px, 1px) !important;
+	-webkit-clip-path: inset(50%) !important;
+	clip-path: inset(50%) !important;
+	height: 1px !important;
+	margin: -1px !important;
+	overflow: hidden !important;
+	padding: 0 !important;
+	position: absolute !important;
+	width: 1px !important;
+	white-space: nowrap !important;
+}
+

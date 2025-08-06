@@ -1,0 +1,66 @@
+{
+  "name": "mastodon-comments",
+  "version": "0.1.0",
+  "description": "Embed Mastodon comments on your website",
+  "main": "./dist/mastodon-comments.umd.js",
+  "module": "./dist/mastodon-comments.es.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "dev": "vite --config vite.config.js --port 3003",
+    "build": "vite build",
+    "watch": "vite build --watch",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "mastodon",
+    "comments",
+    "fediverse",
+    "react",
+    "social"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "masto": "^6.10.3",
+    "react": ">=16.8.0",
+    "react-dom": ">=16.8.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "@types/react": "^19.0.1",
+    "@types/react-dom": "^19.0.2",
+    "@vitejs/plugin-react": "^4.3.3",
+    "vite": "^6.2.1",
+    "vite-plugin-dts": "^4.3.0"
+  },
+  "peerDependencies": {
+    "react": ">=16.8.0",
+    "react-dom": ">=16.8.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yourusername/mastodon-comments.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/mastodon-comments/issues"
+  },
+  "homepage": "https://github.com/yourusername/mastodon-comments#readme",
+  "exports": {
+    ".": {
+      "import": "./dist/mastodon-comments.es.js",
+      "require": "./dist/mastodon-comments.umd.js"
+    },
+    "./CommentSection": {
+      "import": "./dist/CommentSection.es.js",
+      "require": "./dist/CommentSection.umd.js"
+    },
+    "./Filters": {
+      "import": "./dist/CommentFilters.es.js",
+      "require": "./dist/CommentFilters.umd.js"
+    },
+    "./mastodon-comments.css": "./dist/mastodon-comments.css"
+  },
+  "type": "module"
+}
