@@ -16,12 +16,12 @@ const getStatusId = (uri: string): string | null => {
 };
 
 // Default Mastodon instance if none provided
-const DEFAULT_INSTANCE = 'https://hachyderm.io';
+const DEFAULT_INSTANCE = 'https://mastodon.social';
 
 export const CommentSection = ({
   uri: propUri,
   author,
-  instance = DEFAULT_INSTANCE,
+  instance = (new URL(propUri)).origin,
   onEmpty,
   commentFilters,
 }: CommentOptions) => {
