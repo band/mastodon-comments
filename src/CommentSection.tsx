@@ -16,7 +16,7 @@ const getStatusId = (uri: string): string | null => {
 };
 
 // Default Mastodon instance if none provided
-const DEFAULT_INSTANCE = 'https://mastodon.social';
+const DEFAULT_INSTANCE = 'https://hachyderm.io';
 
 export const CommentSection = ({
   uri: propUri,

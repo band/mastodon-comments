@@ -20,33 +20,29 @@
     "react",
     "social"
   ],
-  "author": "Your Name",
+  "author": "Bill Anderson",
   "license": "MIT",
   "dependencies": {
     "masto": "^6.10.3",
-    "react": ">=16.8.0",
-    "react-dom": ">=16.8.0"
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
   },
   "devDependencies": {
     "@types/node": "^22.10.2",
-    "@types/react": "^19.0.1",
-    "@types/react-dom": "^19.0.2",
+    "@types/react": "^18.3.23",
+    "@types/react-dom": "^18.3.7",
     "@vitejs/plugin-react": "^4.3.3",
     "vite": "^6.2.1",
     "vite-plugin-dts": "^4.3.0"
   },
-  "peerDependencies": {
-    "react": ">=16.8.0",
-    "react-dom": ">=16.8.0"
-  },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/yourusername/mastodon-comments.git"
+    "url": "git+https://github.com/band/mastodon-comments.git"
   },
   "bugs": {
-    "url": "https://github.com/yourusername/mastodon-comments/issues"
+    "url": "https://github.com/band/mastodon-comments/issues"
   },
-  "homepage": "https://github.com/yourusername/mastodon-comments#readme",
+  "homepage": "https://github.com/band/mastodon-comments#readme",
   "exports": {
     ".": {
       "import": "./dist/mastodon-comments.es.js",

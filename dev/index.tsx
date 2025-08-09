@@ -7,7 +7,7 @@ const App = () => (
   <div>
     <h1>Testing Mastodon Comments Component</h1>
     <MastodonComments
-      uri="https://hachyderm.io/@band/114144911464155362"
+      uri="https://hachyderm.io/@band/114977262183830227"
       instance="https://hachyderm.io"
       commentFilters={[
         MastodonFilters.NoPins, // Hide pinned comments
