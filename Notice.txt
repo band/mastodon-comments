@@ -1,0 +1,8 @@
+This work was created with an even blend of human and AI contributions. AI was used to make content edits, such as changes to scope, information, and ideas. AI was used to make new content, such as text, images, analysis, and ideas. AI was prompted for its contributions, or AI assistance was enabled. AI-generated content was reviewed and approved. The following model(s) or application(s) were used: Anthropic Claude 3.7 Sonnet; Claude Code v1.0.72.
+
+- AIA Human-AI blend, Content edits, New content, Human-initiated, Reviewed, Anthropic Claude 3.7 Sonnet; Claude Code v1.0.72 v1.0  
+
+This Notice generated using the AI Attribution Toolkit:
+  <https://aiattribution.github.io>
+
+
