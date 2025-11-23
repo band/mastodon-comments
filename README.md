@@ -1,6 +1,6 @@
 # Mastodon Comments
 
-Embed Mastodon comments on your website easily.
+Embed Mastodon comments on your website.
 
 *Adapted from the [Bluesky Comments](https://github.com/czue/bluesky-comments) project by Cory Zue.*
 
@@ -258,9 +258,19 @@ npm install
 npm run dev
 ```
 
-This will set up a local development server with a simple page showing comments,
-and watch for changes.
+This will set up a local development server with a simple page showing comments, and watch for changes.
 
-You can also run  `npm run build` (build once) or `npm run watch` (watch for changes)
-to copy the built files to the `dist` directory.
-From there you can reference the files in your own projects.
+You can also run `npm run build` (build once) or `npm run watch` (watch for changes) to copy the built files to the `dist` directory.  From there you can reference the files in your own projects.
+
+-----
+
+#### Project Attribution Notice
+
+This work was created with an even blend of human and AI contributions. AI was used to make content edits, such as changes to scope, information, and ideas. AI was used to make new content, such as text, images, analysis, and ideas. AI was prompted for its contributions, or AI assistance was enabled. AI-generated content was reviewed and approved. The following model(s) or application(s) were used: Anthropic Claude 3.7 Sonnet; Claude Code v1.0.72.
+
+- AIA Human-AI blend, Content edits, New content, Human-initiated, Reviewed, Anthropic Claude 3.7 Sonnet; Claude Code v1.0.72 v1.0  
+
+This Notice generated using the AI Attribution Toolkit:
+  <https://aiattribution.github.io>
+
+
