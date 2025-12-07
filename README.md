@@ -2,7 +2,9 @@
 
 Embed Mastodon comments on your website.
 
-*Adapted from the [Bluesky Comments](https://github.com/czue/bluesky-comments) project by Cory Zue.*
+*Adapted from the [Bluesky Comments](https://github.com/czue/bluesky-comments) project by Cory Zue.*  
+
+**Note**: The current release version does not include the "(Advanced)" capabilities described below.  
 
 ## Installation in a Node.js project as a React component
 
@@ -49,7 +51,7 @@ Add something like this to your site:
 <div id="mastodon-comments"></div>
 ```
 
-You can use whatever id you want, but it has to match the container id used in the `getElementById` call
+You can use whatever id you want, but it must match the container id used in the `getElementById` call
 in the usage step.
 
 ### 2. Add the CSS files
@@ -100,8 +102,9 @@ See the [Usage](#usage) section below for details on the options and API.
 
 ## Usage
 
-Examples in this section use the React JSX syntax. If you're installing on a project that doesn't
-use JSX or any build tooling (i.e. a regular website), you can instead use the `createElement`
+Examples in this section use the React JSX syntax. If you are
+installing on a project that does not use JSX or any build tooling
+(i.e., a regular website), you can instead use the `createElement`
 function and pass the react options in.
 
 For example, the following two examples are equivalent:
@@ -128,27 +131,14 @@ root.render(
 );
 ```
 
-### Initializing the library based on the author
-
-
-```javascript
-<MastodonComments 
-  author="username" 
-  instance="https://mastodon.social" 
-/>
-```
-
-If you use this mode, the comments section will use the most popular post by that author that links
-to the current page.
-
 ### Initializing the library based on a post URL
 
 ```javascript
 <MastodonComments uri="https://mastodon.social/@username/123456789" instance="https://mastodon.social" />
 ```
 
-If you use this mode, the comments section will use the exact post you specify.
-This usually means you have to add the comments section only *after* you've linked to the article.
+When you use this mode, the comments section will use the exact post specified.
+This usually means you have to add the comments section only *after* you have linked to the article.
 
 ### (Advanced) Providing custom default empty states
 
@@ -171,7 +161,7 @@ You can pass in a `onEmpty` callback to handle the case where there are no comme
 
 ### (Advanced) Filtering comments
 
-You can pass in an array of filters to the `commentFilters` option. These are functions that take a comment and return a boolean. If any of the filters return true, the comment will not be shown.
+You can pass in an array of filters to the `commentFilters` option. These are functions that take a comment and return a boolean. If any of the filters return true, the comment is not shown.
 
 A few default filters utilities are provided:
 
@@ -219,35 +209,6 @@ const NoTwitterLinksFilter = (comment) => {
     ]}
 />
 ```
-
-### (Removed) Legacy installation using `<script>` tags and UMD
-
-Previous versions of this library recommended installing like this:
-
-```html
-<script src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
-<script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
-<script src="https://unpkg.com/bluesky-comments@<VERSION>/dist/bluesky-comments.umd.js"></script>
-```
-
-And initializing the comments in a standard `<script>` tag with an `init` function:
-
-```html
-<script>
-  document.addEventListener('DOMContentLoaded', function() {
-    const uri = 'https://bsky.social/coryzue.com/posts/3jxgux';
-    if (uri) {
-      BlueskyComments.init('bluesky-comments', {uri});
-
-      // Legacy API (still supported but deprecated)
-      initBlueskyComments('bluesky-comments', {uri});
-    }
-  });
-</script>
-```
-
-This option has been removed in version 0.9.0 and new projects should use the ES module syntax above.
-
 
 ## Development
 

@@ -1,7 +1,7 @@
 {
   "name": "mastodon-comments",
   "version": "0.1.0",
-  "description": "Embed Mastodon comments on your website",
+  "description": "Embed Mastodon comments on a website",
   "main": "./dist/mastodon-comments.umd.js",
   "module": "./dist/mastodon-comments.es.js",
   "files": [
